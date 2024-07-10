@@ -50,12 +50,12 @@ The following Python libraries are required to run the code:
 - scikit-learn
 - keras
 
-##You can install these libraries using `pip`:
+## You can install these libraries using `pip`:
 
 pip install numpy pandas matplotlib seaborn scikit-learn keras
 
 
-##Data Preprocessing
+## Data Preprocessing
 
 -Load the dataset.
 -Encode the target variable (diagnosis) using LabelEncoder.
@@ -65,7 +65,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn keras
 -Normalize the feature variables using MinMaxScaler.
 -Split the dataset into training and testing sets.
 
-##Model Building
+## Model Building
 
 -Define a function build_classifier to create a Sequential model with:
 -Input layer with 16 units and ReLU activation
@@ -76,7 +76,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn keras
 -Train the model using the best parameters obtained from GridSearchCV.
 -Evaluate the model's performance using accuracy and loss metrics.
 
-##Model Evaluation
+## Model Evaluation
 
 -Plot the training and validation accuracy.
 -Plot the training and validation loss.
@@ -85,19 +85,19 @@ pip install numpy pandas matplotlib seaborn scikit-learn keras
 -Compute the confusion matrix and accuracy score.
 -Visualize the confusion matrix using a heatmap.
 
-##Results
+## Results
 -The model's performance is evaluated using the confusion matrix and accuracy score. The final accuracy score is printed, and the confusion matrix is visualized using a heatmap.
 -Confusion Matrix:
 array([[66,  1],
        [ 2, 45]])
 -Accuracy Score: 97.37%
 
-##Usage
+## Usage
 
 -Clone the repository: 
 git clone https://github.com/your-username/breast-cancer-detection.git
 cd breast-cancer-detection
 -Run the script:python breast_cancer_detection.py
 
-##License
+## License
 This project is licensed under the MIT License. Free to use.
