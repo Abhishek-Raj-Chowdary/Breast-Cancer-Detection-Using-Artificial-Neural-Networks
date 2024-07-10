@@ -57,47 +57,47 @@ pip install numpy pandas matplotlib seaborn scikit-learn keras
 
 ## Data Preprocessing
 
--Load the dataset.
--Encode the target variable (diagnosis) using LabelEncoder.
--Drop irrelevant columns (radius_worst, perimeter_worst, area_worst, concave points_worst, perimeter_se, id).
--Check for missing values.
--Visualize the correlation matrix using a heatmap.
--Normalize the feature variables using MinMaxScaler.
--Split the dataset into training and testing sets.
+- Load the dataset.
+- Encode the target variable (diagnosis) using LabelEncoder.
+- Drop irrelevant columns (radius_worst, perimeter_worst, area_worst, concave points_worst, perimeter_se, id).
+- Check for missing values.
+- Visualize the correlation matrix using a heatmap.
+- Normalize the feature variables using MinMaxScaler.
+- Split the dataset into training and testing sets.
 
 ## Model Building
 
--Define a function build_classifier to create a Sequential model with:
--Input layer with 16 units and ReLU activation
--Hidden layer with 16 units and ReLU activation
--Output layer with 1 unit and sigmoid activation
--Compile the model using Adam optimizer and binary crossentropy loss.
--Use GridSearchCV for hyperparameter tuning (batch_size and epochs).
--Train the model using the best parameters obtained from GridSearchCV.
--Evaluate the model's performance using accuracy and loss metrics.
+- Define a function build_classifier to create a Sequential model with:
+- Input layer with 16 units and ReLU activation
+- Hidden layer with 16 units and ReLU activation
+- Output layer with 1 unit and sigmoid activation
+- Compile the model using Adam optimizer and binary crossentropy loss.
+- Use GridSearchCV for hyperparameter tuning (batch_size and epochs).
+- Train the model using the best parameters obtained from GridSearchCV.
+- Evaluate the model's performance using accuracy and loss metrics.
 
 ## Model Evaluation
 
--Plot the training and validation accuracy.
--Plot the training and validation loss.
--Predict the test set results.
--Convert probabilities into binary predictions.
--Compute the confusion matrix and accuracy score.
--Visualize the confusion matrix using a heatmap.
+- Plot the training and validation accuracy.
+- Plot the training and validation loss.
+- Predict the test set results.
+- Convert probabilities into binary predictions.
+- Compute the confusion matrix and accuracy score.
+- Visualize the confusion matrix using a heatmap.
 
 ## Results
--The model's performance is evaluated using the confusion matrix and accuracy score. The final accuracy score is printed, and the confusion matrix is visualized using a heatmap.
--Confusion Matrix:
+- The model's performance is evaluated using the confusion matrix and accuracy score. The final accuracy score is printed, and the confusion matrix is visualized using a heatmap.
+- Confusion Matrix:
 array([[66,  1],
        [ 2, 45]])
--Accuracy Score: 97.37%
+- Accuracy Score: 97.37%
 
 ## Usage
 
--Clone the repository: 
+- Clone the repository: 
 git clone https://github.com/your-username/breast-cancer-detection.git
 cd breast-cancer-detection
--Run the script:python breast_cancer_detection.py
+- Run the script:python breast_cancer_detection.py
 
 ## License
 This project is licensed under the MIT License. Free to use.
